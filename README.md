@@ -43,7 +43,7 @@
 ### جميع الحقوق محفوظة
 ## creds 
 
-**[MMM](https://www.google.com/search?q=https://github.com/MMM_USERNAME)** Develober & tweaks combiner.
+**[MMM](https://mazen.website)** Develober & tweaks combiner.
 
 **[Mohammed sabry](https://chromewebstore.google.com/detail/eohbomokfejacahjpcjhfifcbfjoehjl?utm_source=item-share-cb)** Develober.
 
