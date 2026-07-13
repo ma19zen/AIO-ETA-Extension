@@ -40,5 +40,10 @@
 للمساهمة فى التطوير، يمكنك فتح [Issue](https://github.com/ma19zen/AIO-ETA-Extension/issues) أو إرسال Pull Request.
 
 ## **ملاحظة حول الحقوق**
-###جميع الحقوق محفوظة
- هذا المشروع يحتوي على كود مُستنتج من أعمال سابقة. إذا كنت صاحب الحقوق الأصلي، تواصل معي لإزالة المحتوى أو الاتفاق على الترخيص المناسب.
+### جميع الحقوق محفوظة
+creds 
+**[MMM](https://www.google.com/search?q=https://github.com/MMM_USERNAME)** Develober & tweaks combiner.
+**[Mohammed sabry](https://chromewebstore.google.com/detail/eohbomokfejacahjpcjhfifcbfjoehjl?utm_source=item-share-cb)** Develober.
+**[Mohasib Friend](https://chromewebstore.google.com/detail/phckbipoecfpdpkeidhloidggojadjnf?utm_source=item-share-cb)** Develober.
+
+#### هذا المشروع يحتوي على كود مُستنتج من أعمال سابقة. إذا كنت صاحب الحقوق الأصلي، تواصل معي لإزالة المحتوى أو الاتفاق على الترخيص المناسب أو لأي أفكار. 
