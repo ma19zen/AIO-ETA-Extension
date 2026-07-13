@@ -8,7 +8,7 @@
 
 1. اذهب إلى صفحة [الإصدارات (Releases)](https://github.com/ma19zen/AIO-ETA-Extension/releases)
 2. اختر أحدث إصدار (أعلاه)
-3. حمّل ملف `AIO-ETA-Extension.zip` (أو `.crx`)
+3. حمّل ملف `AIO-ETA-Extension.zip`
 4. فك الضغط عن الملف فى مجلد على جهازك
 
 ---
