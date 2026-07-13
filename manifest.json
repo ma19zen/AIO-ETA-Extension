@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "MMM - ETA All-in-One",
+  "description": "أداة شاملة لإدارة بيانات الدخول، ملء التوقيعات، تحميل الإقرارات والفاتورة، وتفعيل النسخ واللصق",
+  "version": "1.0.0",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://invoicing.eta.gov.eg/*",
+    "https://fpascs.eta.gov.eg/*",
+    "https://fpascs.eta.gov.eg:44300/*",
+    "https://eservice.incometax.gov.eg/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://eservice.incometax.gov.eg/*"
+      ],
+      "js": [
+        "content/copy-paste-bypass.js",
+        "content/injector.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://invoicing.eta.gov.eg/*",
+        "https://fpascs.eta.gov.eg/*"
+      ],
+      "js": [
+        "content/copy-paste-bypass.js",
+        "content/injector.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://fpascs.eta.gov.eg:44300/sap/bc/ui5_ui5/sap/ZETA_MCFAPP/index.html*",
+        "https://eservice.incometax.gov.eg/ETax/NonTableVatTax2023/index/*"
+      ],
+      "js": [
+        "content/Signature-Autofill.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "action": {
+    "default_title": "MMM - ETA All-in-One",
+    "default_popup": "popup/popup.html"
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "libs/exceljs.min.js",
+        "libs/FileSaver.min.js",
+        "content/eservise.js"
+      ],
+      "matches": [
+        "https://invoicing.eta.gov.eg/*",
+        "https://fpascs.eta.gov.eg/*",
+        "https://eservice.incometax.gov.eg/*"
+      ]
+    }
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://eservice.incometax.gov.eg https://fpascs.eta.gov.eg:44300"
+  }
+}
